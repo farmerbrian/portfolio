@@ -27,8 +27,9 @@ function GetPortfolio() {
 			<h2>Projects</h2>
 			<div className="ProjectsContainer">
 				{projects.map((project) => (
-					<div className="ProjectCard">
+					<div className="ProjectCard" key={project.key}>
 						<h3>{project.name}</h3>
+						<p>{project.disc}</p>
 						<a href={project.github_url}>
 							<button className="CodeButton">Code</button>
 						</a>{' '}
