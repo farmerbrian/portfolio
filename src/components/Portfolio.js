@@ -23,15 +23,21 @@ function GetPortfolio() {
 	);
 
 	return (
-		<div className="projects">
-			<ul>
+		<div className="Projects">
+			<h2>Projects</h2>
+			<div className="ProjectsContainer">
 				{projects.map((project) => (
-					<ul>
-						<a href={project.github_url}>{project.name}</a> -{' '}
-						<a href={project.live_url}>Preview</a>
-					</ul>
+					<div className="ProjectCard">
+						<h3>{project.name}</h3>
+						<a href={project.github_url}>
+							<button className="CodeButton">Code</button>
+						</a>{' '}
+						<a href={project.live_url}>
+							<button className="PreviewButton">Preview</button>
+						</a>
+					</div>
 				))}
-			</ul>
+			</div>
 		</div>
 	);
 }

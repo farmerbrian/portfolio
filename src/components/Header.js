@@ -1,7 +1,7 @@
 function Header() {
 	return (
-		<div className="header">
-			<h2>Brian Nichols</h2>
+		<div className="Header">
+			<h1>Brian Nichols</h1>
 		</div>
 	);
 }

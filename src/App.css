@@ -1,9 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
 body {
   list-style-type: none;
   text-align: center;
-};
+  background-color: rgb(137, 187, 250);
+  color: rgb(21, 46, 83);
+  font-family: 'Montserrat';
+}
+
+h2 {
+  color:white;
+}
+
+.PreviewButton {
+  background-color: #840032;
+  color: white;
+  border: none;
+}
+
+.CodeButton {
+  background-color: #E59500;
+  color: white;
+  border: none;
+}
 
 .App {
   text-align: center;
 
-};
+}
+
+.Header {
+  border-bottom: 2px solid;
+  border-color: rgb(21, 46, 83);
+}
+
+.ProjectsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 75%;
+  justify-items: center;
+  margin: auto;
+  align-items: center;
+}
+
+
+.ProjectCard {
+  width: 225px;
+  border: 4px solid rgb(21, 46, 83);
+  border-radius: 10px;
+  padding: 5px;
+  padding-top: 30px;
+  margin: 10px;
+  background-color: white;
+}
