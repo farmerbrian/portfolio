@@ -14,12 +14,12 @@ import './App.css';
 // 	doc,
 // 	serverTimestamp,
 // } from 'firebase/firestore';
-import Experience from './components/experience';
+import Portfolio from './components/porfolio';
 
 function App() {
 	return (
 		<div className="App">
-			<Experience />
+			<Portfolio />
 		</div>
 	);
 }
