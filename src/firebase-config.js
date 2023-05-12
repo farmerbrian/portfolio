@@ -10,20 +10,6 @@ const firebaseConfig = {
 	appId: '1:463437451351:web:3953391cf952cabafa9312',
 };
 
-// export function getFirebaseConfig() {
-// 	if (!config || !config.apiKey) {
-// 		throw new Error(
-// 			'No Firebase configuration object provided.' +
-// 				'\n' +
-// 				"Add your web app's configuration object to firebase-config.js"
-// 		);
-// 	} else {
-// 		return config;
-// 	}
-// }
-
-// export firebaseConfig;
-
 const db = initializeApp(firebaseConfig);
-// export const firestore = getFirestore(app);
+
 export default getFirestore();

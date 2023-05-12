@@ -1,31 +1,20 @@
 import './App.css';
-// import { getFirebaseConfig } from './firebase-config.js';
-// import { initializeApp } from 'firebase/app';
-// import {
-// 	getFirestore,
-// 	collection,
-// 	addDoc,
-// 	query,
-// 	orderBy,
-// 	limit,
-// 	onSnapshot,
-// 	setDoc,
-// 	updateDoc,
-// 	doc,
-// 	serverTimestamp,
-// } from 'firebase/firestore';
-import Portfolio from './components/porfolio';
+import GetPortfolio from './components/Portfolio.js';
+import Header from './components/Header.js';
+import About from './components/About.js';
+import Contact from './components/Contact.js';
+import Skills from './components/Skills.js';
 
 function App() {
 	return (
 		<div className="App">
-			<Portfolio />
+			<Header />
+			<About />
+			<Skills />
+			<GetPortfolio />
+			<Contact />
 		</div>
 	);
 }
-
-// // Initialize Firebase
-// const firebaseAppConfig = getFirebaseConfig();
-// initializeApp(firebaseAppConfig);
 
 export default App;

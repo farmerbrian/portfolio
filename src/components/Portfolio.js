@@ -1,10 +1,5 @@
 import { useEffect, useState } from 'react';
-// import { firebaseConfig } from '../firebase-config.js';
-// import { initializeApp } from 'firebase/app';
 import db from '../firebase-config';
-// import { firestore } from '../firebase-config.js';
-// const app = initializeApp(firebaseConfig);
-// export const firestore = getFirestore(app);
 import {
 	getFirestore,
 	collection,
@@ -31,9 +26,10 @@ function GetPortfolio() {
 		<div className="projects">
 			<ul>
 				{projects.map((project) => (
-					<li>
-						<a href={project.github_url}>{project.name}</a>
-					</li>
+					<ul>
+						<a href={project.github_url}>{project.name}</a> -{' '}
+						<a href={project.live_url}>Preview</a>
+					</ul>
 				))}
 			</ul>
 		</div>
