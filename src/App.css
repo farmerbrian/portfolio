@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+:root{
+  --background-color: #89BBFA;
+  --accent-color: #02040F;
+
+}
 
 
 body {
   list-style-type: none;
   text-align: center;
   /* background-color: rgb(137, 187, 250); */
-  background-color: #02040F;
+  background-color: var(--background-color);
   /* color: rgb(21, 46, 83); */
-  color: #89BBFA;
+  color: var(--accent-color);
   font-family: 'Montserrat';
 }
 
