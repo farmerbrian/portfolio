@@ -4,13 +4,21 @@
 body {
   list-style-type: none;
   text-align: center;
-  background-color: rgb(137, 187, 250);
-  color: rgb(21, 46, 83);
+  /* background-color: rgb(137, 187, 250); */
+  background-color: #02040F;
+  /* color: rgb(21, 46, 83); */
+  color: #89BBFA;
   font-family: 'Montserrat';
 }
 
 h2 {
   color:white;
+}
+
+.About {
+  text-align: center;
+  margin:auto;
+  width: 50%;
 }
 
 .PreviewButton {
@@ -45,10 +53,14 @@ h2 {
   align-items: center;
 }
 
+.ProjectCard img {
+  width: 200px;
+  height: auto;
+}
 
 .ProjectCard {
-  width: 225px;
-  height: 225px;
+  width: 250px;
+  height: 275px;
   border: 4px solid rgb(21, 46, 83);
   border-radius: 10px;
   padding: 5px;

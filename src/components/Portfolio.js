@@ -29,12 +29,16 @@ function GetPortfolio() {
 				{projects.map((project) => (
 					<div className="ProjectCard" key={project.key}>
 						<h3>{project.name}</h3>
+						<img
+							src={require('../assets/' + project.image + '.png')}
+							alt={project.name}
+						></img>
 						<p>{project.disc}</p>
 						<a href={project.github_url}>
-							<button className="CodeButton">Code</button>
+							<button className="CodeButton">View Code</button>
 						</a>{' '}
 						<a href={project.live_url}>
-							<button className="PreviewButton">Preview</button>
+							<button className="PreviewButton">Live Preview</button>
 						</a>
 					</div>
 				))}
