@@ -39,11 +39,13 @@ h2 {
 
 .PreviewButton {
   background-color: var(--button1-color);
+  color:var(--dark-color);
   border: none;
 }
 
 .CodeButton {
   background-color: var(--button2-color);
+  color:var(--light-color);
   border: none;
 }
 
