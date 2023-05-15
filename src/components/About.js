@@ -8,7 +8,7 @@ function About() {
 				software but have recently put a major emphasis on learning
 				languages such as JavaScript and React. Take a look below to
 				see some of the projects I’ve been working on and please feel
-				free to reach tour to me if you have any questions.
+				free to reach out to me if you have any questions.
 			</p>
 		</div>
 	);
