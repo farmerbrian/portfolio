@@ -5,13 +5,13 @@ function Skills() {
 			<div className="SkillIconsContainer">
 				<img
 					className="SkillIcons"
-					src="https://skillicons.dev/icons?i=css,html,js,jest,postman"
-					alt="Skill icons for CSS, HTML, JS, Jest & Postman"
+					src="https://skillicons.dev/icons?i=css,html,js,postman"
+					alt="Skill icons for CSS, HTML, JS & Postman"
 				/>
 				<img
 					className="SkillIcons"
-					src="https://skillicons.dev/icons?i=react,vscode,github,raspberrypi,mysql"
-					alt="Skill icons for React, VS Code, Github, Raspberry Pi & MySQL"
+					src="https://skillicons.dev/icons?i=react,vscode,github,mysql"
+					alt="Skill icons for React, VS Code, Github & MySQL"
 				/>
 			</div>
 		</div>
