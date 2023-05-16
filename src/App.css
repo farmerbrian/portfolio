@@ -13,6 +13,9 @@
 }
 
 @media (max-width: 700px) {
+  .ProjectCard {
+    padding: 0px;
+  }
   .SkillIcons {
     width: 75%;
   }
@@ -71,8 +74,8 @@ h2 {
 }
 
 .ProjectCard {
-  width: 265px;
-  height: 300px;
+  width: 255px;
+  height: 325px;
   border: 2px solid var(--button1-color);
   border-radius: 10px;
   padding: 5px;
