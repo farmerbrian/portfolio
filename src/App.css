@@ -1,23 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 :root{
-  /* --background-color: #89BBFA; */
   --dark-color: #222834;
-
-  /* --accent-color: #02040F; */
   --light-color: #eee;
-
   --button1-color: #FD7014;
   --button2-color: #393E46;
-
 }
 
 
 body {
   list-style-type: none;
   text-align: center;
-  /* background-color: rgb(137, 187, 250); */
   background-color: var(--dark-color);
-  /* color: rgb(21, 46, 83); */
   color: var(--light-color);
   font-family: 'Montserrat';
 }
@@ -37,17 +30,6 @@ h2 {
   width: 50%;
 }
 
-.PreviewButton {
-  background-color: var(--button1-color);
-  color:var(--dark-color);
-  border: none;
-}
-
-.CodeButton {
-  background-color: var(--button2-color);
-  color:var(--light-color);
-  border: none;
-}
 
 .App {
   text-align: center;
@@ -76,12 +58,53 @@ h2 {
 
 .ProjectCard {
   width: 250px;
-  height: 275px;
+  height: 300px;
   border: 2px solid var(--button1-color);
   border-radius: 10px;
   padding: 5px;
-  padding-top: 30px;
   margin: 10px;
   background-color: var(--light-color);
   color: var(--dark-color);
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.ProjectCard:hover {
+  border: 4px solid var(--button1-color);
+  margin: 8px;
+}
+
+.ButtonContainer {
+  margin-bottom: 10px;
+  justify-content: space-evenly;
+  flex-direction: row;
+  display: flex;
+}
+
+
+.ProjectButtons {
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.PreviewButton {
+  background-color: var(--button1-color);
+  color:var(--dark-color);
+}
+
+.PreviewButton:hover {
+  border: 2px solid var(--button2-color);
+  padding: 8px;
+}
+
+.CodeButton {
+  background-color: var(--button2-color);
+  color:var(--light-color);
+}
+
+.CodeButton:hover {
+  border: 2px solid var(--button1-color);
+  padding: 8px;
 }
