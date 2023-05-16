@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.24dcd8ea.css",
-    "main.js": "/portfolio/static/js/main.559f0c4a.js",
+    "main.js": "/portfolio/static/js/main.2874d351.js",
     "static/media/memory-card.png": "/portfolio/static/media/memory-card.eb8a0114e0ba786d93cd.png",
     "static/media/admin-dashboard.png": "/portfolio/static/media/admin-dashboard.599ebab008254e57f9e3.png",
     "static/media/weather.png": "/portfolio/static/media/weather.8b0a10c099ad08c62cbc.png",
     "static/media/resume.png": "/portfolio/static/media/resume.73e498c0869d9742bfd8.png",
-    "static/media/BrianNicholsResume.pdf": "/portfolio/static/media/BrianNicholsResume.7d402341465514993c60.pdf",
+    "static/media/BrianNicholsResume.pdf": "/portfolio/static/media/BrianNicholsResume.e871e46f116bae09eb77.pdf",
     "static/media/todo.png": "/portfolio/static/media/todo.4762a3614f921136b2c2.png",
     "static/media/rock-paper-scissors.png": "/portfolio/static/media/rock-paper-scissors.0942a8189ace668b8551.png",
     "static/media/calculator.png": "/portfolio/static/media/calculator.37614d499314aa0fbec2.png",
@@ -14,10 +14,10 @@
     "static/media/etch-a-sketch.png": "/portfolio/static/media/etch-a-sketch.a2505a55f57dcb1497b9.png",
     "index.html": "/portfolio/index.html",
     "main.24dcd8ea.css.map": "/portfolio/static/css/main.24dcd8ea.css.map",
-    "main.559f0c4a.js.map": "/portfolio/static/js/main.559f0c4a.js.map"
+    "main.2874d351.js.map": "/portfolio/static/js/main.2874d351.js.map"
   },
   "entrypoints": [
     "static/css/main.24dcd8ea.css",
-    "static/js/main.559f0c4a.js"
+    "static/js/main.2874d351.js"
   ]
 }
