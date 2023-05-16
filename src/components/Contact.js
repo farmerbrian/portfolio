@@ -4,7 +4,6 @@ function Contact() {
 	return (
 		<div className="Contact">
 			<h2>Contact Me</h2>
-			{/* <h4>Email: nichols.brian.d@gmail.com</h4> */}
 			<div className="ContactIcons">
 				<a href="mailto:nichols.brian.d@gmail.com">
 					<i class="fa-solid fa-envelope fa-2xl"></i>

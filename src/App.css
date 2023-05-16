@@ -14,8 +14,6 @@
 
 @media (max-width: 700px) {
   .SkillIcons {
-    /* display:inline-block;
-    vertical-align:middle; */
     width: 75%;
   }
 }
@@ -32,11 +30,6 @@ body {
 h2 {
   color:var(--light-color);
 }
-
-/* .Icons {
-  width: 50px;
-  height: auto;
-} */
 
 .About, .Skills, .ProjectsContainer, .Contact {
   padding-top: 20px;
