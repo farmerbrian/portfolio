@@ -19,10 +19,10 @@ h2 {
   color:var(--light-color);
 }
 
-.Icons {
-  width: 25px;
+/* .Icons {
+  width: 50px;
   height: auto;
-}
+} */
 
 .About {
   text-align: center;
@@ -107,4 +107,21 @@ h2 {
 .CodeButton:hover {
   border: 2px solid var(--button1-color);
   padding: 8px;
+}
+
+
+.ContactIcons {
+  display: flex;
+  flex-direction: row ;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color:#eee;
+  height: 45px;
+  width: auto;
+  padding-bottom: 50px;
+}
+
+i {
+  color:#eee;
 }
