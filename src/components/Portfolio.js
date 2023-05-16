@@ -3,20 +3,24 @@ import db from '../firebase-config';
 import {
 	collection,
 	onSnapshot,
+	query,
+	orderBy,
 	// getFirestore,
 	// addDoc,
-	// query,
-	// orderBy,
 	// doc,
 	// getDocs,
 } from 'firebase/firestore';
 
+// Go get data from Firebase.
 function GetPortfolio() {
 	const [projects, setProjects] = useState([]);
 
+	//Seperate out the collection function so that we can query it and order by the 'key' field
+	const q = query(collection(db, 'portfolio'), orderBy('key', 'asc'));
+
 	useEffect(
 		() =>
-			onSnapshot(collection(db, 'portfolio'), (snapshot) => {
+			onSnapshot(q, (snapshot) => {
 				setProjects(snapshot.docs.map((doc) => doc.data()));
 			}),
 		[]
@@ -26,6 +30,7 @@ function GetPortfolio() {
 		<div className="Projects">
 			<h2>Projects</h2>
 			<div className="ProjectsContainer">
+				{/* Create the project Cards */}
 				{projects.map((project) => (
 					<div className="ProjectCard" key={project.key}>
 						<div>
