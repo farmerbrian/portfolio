@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:wght@400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 :root{
   --dark-color: #222834;
   --light-color: #eee;
@@ -11,16 +12,36 @@ body {
   text-align: center;
   background-color: var(--dark-color);
   color: var(--light-color);
-  font-family: 'Montserrat';
+  font-family:  'Inter',sans-serif;
+  background-color: #222834;
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='98' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23393e46' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23525252' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 h1 {
   font-size: 36px;
+  font-weight:800 ;
 }
 
 h2 {
   color:var(--light-color);
-  font-size: 30px;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.App {
+  text-align: center;
+}
+
+.Header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-shadow: 0px 4px 10px 5px hsla(0, 0%, 0%, 0.3);
 }
 
 .About, .Skills, .ProjectsContainer, .Contact {
@@ -31,30 +52,17 @@ h2 {
 .About {
   text-align: center;
   margin:auto;
-  
   padding-top: 20px;
   padding-bottom: 0px;
 }
 
-
-.App {
-  text-align: center;
-
-}
-
-.Header {
-  border-bottom: 2px solid;
-  border-color: var(--light-color);
-}
-
 .ProjectsContainer {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  /* width: 50%; */
-  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+  justify-content: center;
   margin: auto;
   align-items: center;
+  gap: 24px;
 }
 
 a {
@@ -62,64 +70,70 @@ a {
 }
 
 .ProjectCard img {
-  width: 200px;
+  width: 225px;
   height: auto;
 }
 
 .ProjectCard {
-  width: 255px;
-  height: 325px;
-  border: 2px solid var(--button1-color);
-  border-radius: 10px;
+  width: 300px;
+  height: 345px;
+  color: var(--button2-color);
+  border-radius: 5px;
   padding: 5px;
-  margin: 10px;
+  margin: auto;
   background-color: var(--light-color);
   color: var(--dark-color);
   justify-content: space-between;
   display: flex;
   flex-direction: column;
+  box-shadow: 10px 10px 10px 0 hsla(0, 0%, 0%, 0.5);
+  }
+
+.ProjectCard P {
+  font-weight: 300;
+  font-size: 14px;
 }
 
 .ProjectCard:hover {
-  border: 4px solid var(--button1-color);
-  margin: 8px;
+  outline: 4px solid var(--button1-color);
 }
 
 .ButtonContainer {
   margin-bottom: 10px;
-  justify-content: space-evenly;
-  flex-direction: row;
+  flex-direction: column;
   display: flex;
 }
 
 
 .ProjectButtons {
   border: none;
-  padding: 10px;
-  border-radius: 4px;
+  padding: 6px;
+  margin: 4px;
+  border-radius: 2px;
   font-size: 14px;
+  color: var(--button2-color);
+  text-decoration: none;
 }
 
 .PreviewButton {
   background-color: var(--button1-color);
-  color:var(--dark-color);
+  outline: 2px solid var(--button1-color);
+
 }
 
 .PreviewButton:hover {
-  border: 2px solid var(--button2-color);
-  padding: 8px;
+  outline: 2px solid var(--button2-color);
 }
 
 .CodeButton {
-  background-color: var(--button2-color);
-  color:var(--light-color);
+  background-color: var(--light-color);
+  outline: 2px solid var(--button2-color);
 }
 
 .CodeButton:hover {
-  border: 2px solid var(--button1-color);
-  padding: 8px;
+  background-color: rgb(201, 201, 201);
+  
 }
-
 
 .ContactIcons {
   display: flex;
@@ -140,7 +154,7 @@ i {
 
 @media (min-width: 600px) {
   .ProjectsContainer {
-    width: 50%;
+    width: 80%;
   }
   .About {
     width: 50%;
@@ -158,7 +172,7 @@ i {
     width: 75%;
   }
   .Projects {
-    width: 75%;
+    width: 80%;
     margin: auto;
   }
 }

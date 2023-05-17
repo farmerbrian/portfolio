@@ -52,29 +52,19 @@ function GetPortfolio() {
 						</div>
 
 						<div className="ButtonContainer">
-							<a href={project.github_url} target="_blank">
-								<button
-									className="CodeButton ProjectButtons"
-									value={
-										'View the code of the ' +
-										project.name +
-										' project in a new tab.'
-									}
-								>
-									View Code
-								</button>
+							<a
+								href={project.github_url}
+								target="_blank"
+								className="CodeButton ProjectButtons"
+							>
+								View Code
 							</a>
-							<a href={project.live_url} target="_blank">
-								<button
-									className="PreviewButton ProjectButtons"
-									value={
-										'View the live preview of the ' +
-										project.name +
-										' project in a new tab.'
-									}
-								>
-									Live Preview
-								</button>
+							<a
+								href={project.live_url}
+								target="_blank"
+								className="PreviewButton ProjectButtons"
+							>
+								Live Preview
 							</a>
 						</div>
 					</div>
