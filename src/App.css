@@ -52,7 +52,7 @@ h2 {
   margin:auto;
   width: 50%;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 
@@ -74,6 +74,10 @@ h2 {
   justify-items: center;
   margin: auto;
   align-items: center;
+}
+
+a {
+  color: #eee;
 }
 
 .ProjectCard img {
@@ -112,6 +116,7 @@ h2 {
   border: none;
   padding: 10px;
   border-radius: 4px;
+  font-size: 14px;
 }
 
 .PreviewButton {

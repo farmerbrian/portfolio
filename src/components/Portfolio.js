@@ -29,6 +29,13 @@ function GetPortfolio() {
 	return (
 		<div className="Projects">
 			<h2>Projects</h2>
+			<p>
+				Here's some projects that I created while working through{' '}
+				<a href="https://theodinproject.com" target="_blank">
+					The Odin Project
+				</a>{' '}
+				curriculum.
+			</p>
 			<div className="ProjectsContainer">
 				{/* Create the project Cards */}
 				{projects.map((project) => (
