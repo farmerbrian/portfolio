@@ -1,30 +1,27 @@
 import { useEffect, useState } from 'react';
-import db from '../firebase-config';
-import {
-	collection,
-	onSnapshot,
-	query,
-	orderBy,
-	// getFirestore,
-	// addDoc,
-	// doc,
-	// getDocs,
-} from 'firebase/firestore';
+import { createClient } from '@supabase/supabase-js';
 
-// Go get data from Firebase.
+// Connect to Supabase
+const supabase = createClient(
+	'https://ejrpqbyhqgmjpufgsfnj.supabase.co',
+	'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVqcnBxYnlocWdtanB1ZmdzZm5qIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODQ4NjYzMzcsImV4cCI6MjAwMDQ0MjMzN30.51zKfzPSHSE3d_i3OCuKjJPF4d7gcA4YLCf-feIgPv0'
+);
+
 function GetPortfolio() {
-	const [projects, setProjects] = useState([]);
+	const [project, setProject] = useState([]);
 
-	//Seperate out the collection function so that we can query it and order by the 'key' field
-	const q = query(collection(db, 'portfolio'), orderBy('key', 'asc'));
+	useEffect(() => {
+		getProjects();
+	}, []);
 
-	useEffect(
-		() =>
-			onSnapshot(q, (snapshot) => {
-				setProjects(snapshot.docs.map((doc) => doc.data()));
-			}),
-		[]
-	);
+	async function getProjects() {
+		const { data } = await supabase
+			.from('projects')
+			.select('*')
+			.order('sort_key');
+		setProject(data);
+		console.log(data);
+	}
 
 	return (
 		<div className="Projects">
@@ -38,8 +35,8 @@ function GetPortfolio() {
 			</p>
 			<div className="ProjectsContainer">
 				{/* Create the project Cards */}
-				{projects.map((project) => (
-					<div className="ProjectCard" key={project.key}>
+				{project.map((project) => (
+					<div className="ProjectCard" key={project.sort_key}>
 						<div>
 							<h3>{project.name}</h3>
 							<img
@@ -48,7 +45,7 @@ function GetPortfolio() {
 									'A screenshot of the ' + project.name + ' project'
 								}
 							></img>
-							<p>{project.disc}</p>
+							<p>{project.description}</p>
 						</div>
 
 						<div className="ButtonContainer">
