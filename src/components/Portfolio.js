@@ -3,8 +3,8 @@ import { createClient } from '@supabase/supabase-js';
 
 // Connect to Supabase
 const supabase = createClient(
-	'https://ejrpqbyhqgmjpufgsfnj.supabase.co',
-	'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVqcnBxYnlocWdtanB1ZmdzZm5qIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODQ4NjYzMzcsImV4cCI6MjAwMDQ0MjMzN30.51zKfzPSHSE3d_i3OCuKjJPF4d7gcA4YLCf-feIgPv0'
+	process.env.REACT_APP_SUPABASE_URL,
+	process.env.REACT_APP_SUPABASE_API
 );
 
 function GetPortfolio() {
