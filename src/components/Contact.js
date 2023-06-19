@@ -1,4 +1,7 @@
-import BrianNicholsResume from '../assets/BrianNicholsResume.pdf';
+// import BrianNicholsResume from '../assets/BrianNicholsResume.pdf';
+// import BrianNicholsResume from `${process.env.REACT_APP_SUPABASE_URL}/storage/v1/object/public/portfolio_assets/public/BrianNicholsResume.pdf`;
+
+const BrianNicholsResume = `${process.env.REACT_APP_SUPABASE_URL}/storage/v1/object/public/portfolio_assets/public/BrianNicholsResume.pdf`;
 
 // Build component for linked contact icons
 
