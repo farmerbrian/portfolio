@@ -1,24 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.cc8bbe6c.css",
-    "main.js": "/portfolio/static/js/main.3e1ed232.js",
-    "static/media/memory-card.png": "/portfolio/static/media/memory-card.eb8a0114e0ba786d93cd.png",
-    "static/media/admin-dashboard.png": "/portfolio/static/media/admin-dashboard.599ebab008254e57f9e3.png",
-    "static/media/rock-paper-scissors.png": "/portfolio/static/media/rock-paper-scissors.389fd6ba07e0ca31b600.png",
-    "static/media/weather.png": "/portfolio/static/media/weather.8b0a10c099ad08c62cbc.png",
-    "static/media/resume.png": "/portfolio/static/media/resume.73e498c0869d9742bfd8.png",
-    "static/media/etch-a-sketch.png": "/portfolio/static/media/etch-a-sketch.fcdd3ea988163278fd09.png",
-    "static/media/BrianNicholsResume.pdf": "/portfolio/static/media/BrianNicholsResume.afc9ce2ca16109d56630.pdf",
-    "static/media/todo.png": "/portfolio/static/media/todo.4762a3614f921136b2c2.png",
-    "static/media/test.png": "/portfolio/static/media/test.1f1ff7311a20531a8f5f.png",
-    "static/media/calculator.png": "/portfolio/static/media/calculator.37614d499314aa0fbec2.png",
-    "static/media/tic-tac-toe.png": "/portfolio/static/media/tic-tac-toe.4762f02de99f8339acf7.png",
+    "main.js": "/portfolio/static/js/main.d7d25a3a.js",
     "index.html": "/portfolio/index.html",
     "main.cc8bbe6c.css.map": "/portfolio/static/css/main.cc8bbe6c.css.map",
-    "main.3e1ed232.js.map": "/portfolio/static/js/main.3e1ed232.js.map"
+    "main.d7d25a3a.js.map": "/portfolio/static/js/main.d7d25a3a.js.map"
   },
   "entrypoints": [
     "static/css/main.cc8bbe6c.css",
-    "static/js/main.3e1ed232.js"
+    "static/js/main.d7d25a3a.js"
   ]
 }
