@@ -7,6 +7,9 @@ const supabase = createClient(
 	process.env.REACT_APP_SUPABASE_API
 );
 
+const bucketUrl =
+	'https://ejrpqbyhqgmjpufgsfnj.supabase.co/storage/v1/object/public/portfolio_assets/public/';
+
 function GetPortfolio() {
 	const [project, setProject] = useState([]);
 
@@ -40,7 +43,8 @@ function GetPortfolio() {
 						<div>
 							<h3>{project.name}</h3>
 							<img
-								src={require('../assets/' + project.image + '.png')}
+								// src={require('../assets/' + project.image + '.png')}
+								src={bucketUrl + project.image}
 								alt={
 									'A screenshot of the ' + project.name + ' project'
 								}
